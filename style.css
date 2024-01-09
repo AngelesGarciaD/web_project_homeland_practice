@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color:#FFFFFF;
+    color:#FFF;
     margin-top: 90px;
     width: 984px;
     height: 983px;
@@ -70,19 +70,17 @@
 .intro{
     max-width: 1017px;
     margin-top: 92px;
-    color:#FFFFFF;
+    color:#FFF;
     width: 1017;
     height: 516;
 }
 .intro__title{
-    border: solid 1px red;
     width: 1017px;
     font-size: 54px;
     line-height: 58px;
     font-weight: 900;
 }
 .intro__description{
-    border: solid 1px red;
     font-size: 24px;
     line-height: 34px;
     font-weight: 400;
@@ -105,9 +103,278 @@
     align-self: start;
 }
 .photo-grid{
-    border: solid 1px red;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:16px;
     margin-top: 92px;
+    margin-bottom: 92px;
     width: 1184px;
     height: 442px;
+}
+.photo-grid__item{
+    width: 100%;
+}
+.places{
+    border: solid 1px lightgreen;
+    margin:0 auto;
+    width: 987px;
+    height: 4098px;
+}
+.place{
+    margin: 0 148px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "title artist"
+    "image paragraph"
+    "button paragraph";
+    column-gap: 40px;
+}
+.places__ucrania{
+    margin-bottom: 80px;
+}
+.places__gales{
+    margin-bottom: 35px;
+}
+.places__estadosunidos{
+    margin-bottom: 80px;
+}
+.places__burundi{
+    margin-bottom: 51px;
+}
+.place__mexico{
+    margin-bottom: 92px;
+}
+.place__title{
+    grid-area: title;
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 900;
+    color:#FFF;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+.place__image{
+    grid-area: image;
+    width: 100%;
+    margin: 48px 0;
+    object-fit: cover;
+}
+.place__button-frame{
+    grid-area: button;
+    width: 355px;
+    height: 48px;
+    border-radius: 5px;
+    background:#0278FE;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    transition: background-color 0.5s ease;
+}
+.place__button-frame:hover{
+    background: #0063D2;
+}
+.place__button-text{
+    font-size: 18px;
+    line-height: 21.78px;
+    font-weight: 600;
+    color:#FFF;
+    text-align: center;
+    margin: auto;
+}
+.artist{
+    grid-area: artist;
+    align-self: flex-end;
+    width: 456px;
+    height: 45px;
+}
+.place__artist{
+    font-size: 12px;
+    line-height: 14.52px;
+    font-weight: 400;
+    color: #AAA;
+    margin-bottom: 8px;
+}
+.place__artist-name{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color:#FFF;
+}
+.place__paragraph{
+    grid-area: paragraph;
+    margin-top: 48px;
+    max-width: 448px;
+    font-size: 18px;
+    line-height: 29.34px;
+    color:#FFF;
+}
+.place__paragraph-item{
+    margin: 0;
+}
+.place__paragraph-item_ucrania{
+    margin-bottom: 25px;
+}
+.place__paragraph-item_gales{
+    margin-bottom: 56px;
+}
+.place__paragraph-item_estadosunidos{
+    margin-bottom: 17px;
+}
+.place__dparagraph-item_burundi{
+    margin-bottom: 25px;
+}
+.place__paragraph-item_mexico{
+    margin-bottom: 25px;
+}
 
+@media screen and (max-width: 1024px){
+    .place{
+      margin: 0 50px;
+    }
+@media screen and (max-width: 1024px){
+    .place{
+      margin: 0 50px;
+    }  
+    .place__button-frame{
+      max-height: 30px;
+      line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .places{
+        padding-bottom: 92px;
+    }
+    .place{
+        margin-left: 24px;
+        margin-right: 24px;
+        grid-template-rows: 92px 340px 1fr;
+        row-gap: 48px;
+    }
+    .place__title{
+        font-size: 42px;
+        line-height: 46px;
+        align-self: flex-end;
+    } 
+    .place__description{
+        margin: 0;
+        font-size: 16px;
+    }
+    .place__image-container{
+        margin: 0;
+    }
+    .place__button-frame{
+        max-width: 315px;
+        padding: 13px 10px;
+        line-height: 18px;
+    }
+    .place_ucrania{
+        margin-bottom: 31px;
+    }
+    .place_gales{
+        margin-bottom: 46px;
+    }
+    .place_estadosunidos{
+        margin-bottom: 25px;
+    }
+    .place_burundi{
+        margin-bottom: 41px;
+    }
+    .place__paragraph-item_ucrania{
+        margin-bottom: 14px;
+    }
+    .place__paragraph-item_gales{
+        margin-bottom: 25px;
+    }
+    .place__paragraph-item_estadosunidos{
+        margin-bottom: 20px;
+    }
+    .place__paragraph-item_burundi{
+        margin-bottom: 11px;
+    }
+    .place__paragraph-item_mexico{
+        margin-bottom: 11px;
+    }
+}
+      
+@media screen and (max-width: 544px){
+    .place{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .place__title,
+    .place__artist,
+    .place__image{
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+    .place__button-frame{
+        margin-top: 15px;
+    }
+}
+      
+@media screen and (max-width: 320px){
+    .places{
+        padding-bottom: 64px;
+    }
+    .place{
+        margin: 0;
+    }
+    .place__title{
+        align-self: flex-start;
+        font-size: 32px;
+        line-height: 35px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 30px;
+    }
+    .place__artist{
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+    .place__title,
+    .place__artist,
+    .place__description,
+    .place__button-frame{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .place_ucrania{
+        margin-bottom: 16px;
+    }
+    .place_gales{
+        margin-bottom: 36px;
+    }
+    .place_estadosunidos{
+        margin-bottom: 17px;
+    }
+    .place_burundi{
+        margin-bottom: 50px;
+    }
+    .place__description-item_ucrania{
+        margin-bottom: 7px;
+    }
+    .place__description-item_gales{
+        margin-bottom: 10px;
+    }
+    .place__description-item_estadosunidos{
+        margin-bottom: 0;
+    }
+    .place__description-item_burundi{
+        margin-bottom: 25px;
+    }
+    .place__description-item_mexico{
+        margin-bottom: 25px;
+    }
+    .place__button-frame{
+        max-width: 288px;
+        max-height: 48px;
+        margin: auto;
+        font-size: 14px;
+        line-height: 16.94px;
+        text-align: center;
+    }
+}
 }
