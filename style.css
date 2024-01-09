@@ -115,26 +115,23 @@
     width: 100%;
 }
 .places{
-    border: solid 1px lightgreen;
     margin:0 auto;
-    width: 987px;
-    height: 4098px;
 }
 .place{
     margin: 0 148px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "title artist"
-    "image paragraph"
-    "button paragraph";
+        "title artist"
+        "image paragraph"
+        "button paragraph";
     column-gap: 40px;
 }
 .places__ucrania{
     margin-bottom: 80px;
 }
 .places__gales{
-    margin-bottom: 35px;
+    margin-bottom: 31px;
 }
 .places__estadosunidos{
     margin-bottom: 80px;
@@ -142,7 +139,7 @@
 .places__burundi{
     margin-bottom: 51px;
 }
-.place__mexico{
+.places__mexico{
     margin-bottom: 92px;
 }
 .place__title{
@@ -151,14 +148,14 @@
     line-height: 76px;
     font-weight: 900;
     color:#FFF;
-    margin-top: 0;
-    margin-bottom: 48px;
+    margin: 0;
 }
 .place__image{
     grid-area: image;
     width: 100%;
     margin: 48px 0;
     object-fit: cover;
+    overflow: hidden;
 }
 .place__button-frame{
     grid-area: button;
@@ -185,8 +182,6 @@
 .artist{
     grid-area: artist;
     align-self: flex-end;
-    width: 456px;
-    height: 45px;
 }
 .place__artist{
     font-size: 12px;
@@ -200,6 +195,7 @@
     line-height: 22px;
     font-weight: 400;
     color:#FFF;
+    margin: 0;
 }
 .place__paragraph{
     grid-area: paragraph;
@@ -231,10 +227,6 @@
 @media screen and (max-width: 1024px){
     .place{
       margin: 0 50px;
-    }
-@media screen and (max-width: 1024px){
-    .place{
-      margin: 0 50px;
     }  
     .place__button-frame{
       max-height: 30px;
@@ -257,11 +249,11 @@
         line-height: 46px;
         align-self: flex-end;
     } 
-    .place__description{
+    .place__paragraph{
         margin: 0;
         font-size: 16px;
     }
-    .place__image-container{
+    .place__image{
         margin: 0;
     }
     .place__button-frame{
@@ -330,13 +322,13 @@
         padding-right: 16px;
         margin-bottom: 30px;
     }
-    .place__artist{
+    .artist{
         margin-bottom: 30px;
         align-self: flex-start;
     }
     .place__title,
-    .place__artist,
-    .place__description,
+    .artist,
+    .place__paragraph,
     .place__button-frame{
         padding-left: 16px;
         padding-right: 16px;
@@ -353,19 +345,19 @@
     .place_burundi{
         margin-bottom: 50px;
     }
-    .place__description-item_ucrania{
+    .place__paragraph-item_ucrania{
         margin-bottom: 7px;
     }
-    .place__description-item_gales{
+    .place__paragraph-item_gales{
         margin-bottom: 10px;
     }
-    .place__description-item_estadosunidos{
+    .place__paragraph-item_estadosunidos{
         margin-bottom: 0;
     }
-    .place__description-item_burundi{
+    .place__paragraph-item_burundi{
         margin-bottom: 25px;
     }
-    .place__description-item_mexico{
+    .place__paragraph-item_mexico{
         margin-bottom: 25px;
     }
     .place__button-frame{
@@ -376,5 +368,4 @@
         line-height: 16.94px;
         text-align: center;
     }
-}
 }
