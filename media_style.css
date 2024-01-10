@@ -1,0 +1,279 @@
+@media screen and (max-width: 768px){
+    .lead__title{
+        margin-bottom: 99px;
+    }
+    .lead__subtitle {
+        margin-bottom: 69px;
+    }
+}
+
+@media screen and (max-width: 544px){
+    .lead__title{
+        margin-bottom: 32px;
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .lead__subtitle {
+        margin-bottom: 50px;
+        font-size: 22px;
+        line-height: 65px;
+    } 
+}
+
+@media screen and (max-width: 320px){
+    .header__logo{
+        max-width: 200px;
+    }
+    .lead{
+        margin-top: 50px;
+    }
+    .lead__title{
+        margin-bottom: 60px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .lead__subtitle {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .intro {
+        margin: 0;
+        padding: 55px 24px 64px 24px;
+    }
+    .intro__title{
+        margin-bottom: 15px;
+    }
+}
+  
+@media screen and (max-width: 544px){
+    .intro__title{
+         font-size: 32px;
+        line-height: 35px;
+    }
+    .intro__cite{
+        margin-bottom: 62px;
+    }
+    .intro__paragraph{
+        width: 100%;
+    }
+}
+  
+@media screen and (max-width: 320px){
+    .intro{
+        padding-top: 44px;
+        margin: 0;
+        padding: 44px 16px 38px 16px;
+    }
+    .intro__cite{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .photo{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .photo{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 16px 62px;
+  }
+  .photo__item:not(:last-of-type){
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+    .place{
+      margin: 0 50px;
+    }  
+    .place__button{
+      max-height: 30px;
+      line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .places{
+        padding-bottom: 92px;
+    }
+    .place{
+        margin-left: 24px;
+        margin-right: 24px;
+        grid-template-rows: 92px 340px 1fr;
+        row-gap: 48px;
+    }
+    .place__title{
+        font-size: 42px;
+        line-height: 46px;
+        align-self: flex-end;
+    } 
+    .place__paragraph{
+        margin: 0;
+        font-size: 16px;
+    }
+    .place__image{
+        margin: 0;
+    }
+    .place__button{
+        max-width: 315px;
+        padding: 13px 10px;
+        line-height: 18px;
+    }
+    .place__ucrania{
+        margin-bottom: 31px;
+    }
+    .place__gales{
+        margin-bottom: 46px;
+    }
+    .place__estadosunidos{
+        margin-bottom: 25px;
+    }
+    .place__burundi{
+        margin-bottom: 41px;
+    }
+    .place__paragraph-item__ucrania{
+        margin-bottom: 14px;
+    }
+    .place__paragraph-item__gales{
+        margin-bottom: 25px;
+    }
+    .place__paragraph-item__estadosunidos{
+        margin-bottom: 20px;
+    }
+    .place__paragraph-item__burundi{
+        margin-bottom: 11px;
+    }
+    .place__paragraph-item__mexico{
+        margin-bottom: 11px;
+    }
+}
+
+@media screen and (max-width: 544px){
+    .place{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .place__title,
+    .place__artist,
+    .place__image{
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+    .place__button-frame{
+        margin-top: 15px;
+    }
+}
+      
+@media screen and (max-width: 320px){
+    .places{
+        padding-bottom: 64px;
+    }
+    .place{
+        margin: 0;
+    }
+    .place__title{
+        align-self: flex-start;
+        font-size: 32px;
+        line-height: 35px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 30px;
+    }
+    .place__artist{
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+    .place__title,
+    .place__artist,
+    .place__paragraph,
+    .place__button{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .places__ucrania{
+        margin-bottom: 16px;
+    }
+    .places__gales{
+        margin-bottom: 36px;
+    }
+    .places__estadosunidos{
+        margin-bottom: 17px;
+    }
+    .places__burundi{
+        margin-bottom: 50px;
+    }
+    .place__paragraph-item__ucrania{
+        margin-bottom: 7px;
+    }
+    .place__paragraph-item__gales{
+        margin-bottom: 10px;
+    }
+    .place__paragraph-item__estadosunidos{
+        margin-bottom: 0;
+    }
+    .place__paragraph-item__burundi{
+        margin-bottom: 25px;
+    }
+    .place__paragraph-item__mexico{
+        margin-bottom: 25px;
+    }
+    .place__button{
+        max-width: 288px;
+        max-height: 48px;
+        margin: auto;
+        font-size: 14px;
+        line-height: 16.94px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 425px){
+    .cover__title {
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 16px;
+    }
+    .cover__address{
+      margin-bottom: 16px;
+    }
+    .cover__address-item{
+      font-size: 14px;
+      line-height: 16px;
+    }
+}
+  
+@media screen and (max-width: 320px){
+    .cover{
+      max-width: 100%;
+      height: 254px;
+      background-size: cover;
+      justify-content: stretch;
+    }
+  
+    .cover__image{
+      height: 100%;
+    }
+  
+    .cover__content{
+      margin-top: 46px;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        padding-top: 88px;
+    }
+}
+  
+@media screen and (max-width: 320px){
+    .footer{
+        padding-top: 64px;
+    }
+}
