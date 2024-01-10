@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 77%;
 }
 .header{
     display: flex;
@@ -21,6 +22,7 @@
     display:flex;
     align-items: center;
     flex-direction: column;
+    min-width: 77%;
 }
 .lead{
     display: flex;
@@ -31,7 +33,6 @@
     margin-top: 90px;
     width: 984px;
     height: 983px;
-    position: relative;
     flex-direction: column;
 }
 .lead__title{
@@ -41,23 +42,25 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 32px;
-    width: 793px;
-    height: 200px;
 }
 .lead__subtitle{
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
-    width: 720px;
-    height: 72px;
-    margin: auto;
+    max-width: 720px;
+    max-height: 72px;
+    margin: 0;
     margin-bottom: 679px;
 }
 .lead__image{
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+.lead__image-photo{
     position: absolute;
     z-index: 1;
-    width: 100%;
     height: auto;
     bottom: 0%;
 }
@@ -223,6 +226,64 @@
 .place__paragraph-item_mexico{
     margin-bottom: 25px;
 }
+.cover {
+    position: relative;
+    max-width: 92.5%;
+    max-height: 740px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .cover__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  .cover:hover{
+    opacity: 0.5;
+  }
+  .cover__image{
+    opacity: 0.5;
+  }
+  .cover__content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .cover__title{
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 76px;
+  }
+  .cover__address{
+    margin-bottom: 32px;
+  }
+  .cover__address-item{
+    margin: 0;
+    line-height: 22px;
+  }
+  .cover__link{
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 4px;
+    line-height: 21.78px;
+    color: #fff;
+    background-color: #0278FE;
+    transition: background-color 0.3s ease;
+  }
+  .cover__link:hover{
+    background-color: #0063d2;
+  }
 
 @media screen and (max-width: 1024px){
     .place{
@@ -287,6 +348,47 @@
     }
     .place__paragraph-item_mexico{
         margin-bottom: 11px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .lead__title{
+        margin-bottom: 99px;
+    }
+    .lead__subtitle {
+        margin-bottom: 69px;
+    }
+}
+
+@media screen and (max-width: 544px){
+    .lead__title{
+        margin-bottom: 32px;
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .lead__subtitle {
+        margin-bottom: 50px;
+        font-size: 22px;
+        line-height: 65px;
+    } 
+}
+
+@media screen and (max-width: 320px){
+    .header__logo{
+        max-width: 200px;
+    }
+    .lead{
+        margin-top: 50px;
+    }
+    .lead__title{
+        margin-bottom: 60px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .lead__subtitle {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
       
