@@ -58,7 +58,7 @@
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    filter: grayscale(100%);;
+    filter: grayscale(100%);
 }
 .intro{
     max-width: 1017px;
@@ -230,7 +230,7 @@
     max-height: 740px;
     margin: auto;
     font-size: 18px;
-    position:relative
+    position:relative;
 }
 .cover__image{
     width: 100%;
