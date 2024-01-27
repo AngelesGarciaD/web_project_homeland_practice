@@ -63,6 +63,7 @@
     line-height: 21.78px;
     font-weight: 600;
     transition: background-color 0.5s ease;
+    text-decoration: none;
 }
 .place__button:hover{
     background: #0063D2;
