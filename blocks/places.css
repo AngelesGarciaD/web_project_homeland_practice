@@ -210,6 +210,7 @@
         padding-left: 16px;
         padding-right: 16px;
         margin-bottom: 30px;
+        margin-top: 36px;
     }
     .place__artist{
         margin-bottom: 30px;
@@ -257,6 +258,5 @@
         line-height: 16.94px;
         text-align: center;
         margin-top: 10px;
-        margin-bottom: 36px;
     }
 }
