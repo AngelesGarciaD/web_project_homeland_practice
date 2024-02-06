@@ -10,21 +10,7 @@
         "button paragraph";
     column-gap: 40px;
     margin: 0 148px;
-}
-.places__ucrania{
     margin-bottom: 80px;
-}
-.places__gales{
-    margin-bottom: 31px;
-}
-.places__estadosunidos{
-    margin-bottom: 80px;
-}
-.places__burundi{
-    margin-bottom: 51px;
-}
-.places__mexico{
-    margin-bottom: 92px;
 }
 .place__title{
     grid-area: title;
@@ -132,6 +118,7 @@
         margin-right: 24px;
         grid-template-rows: 92px 340px 1fr;
         row-gap: 48px;
+        margin-bottom: 41px;
     }
     .place__title{
         font-size: 42px;
@@ -149,18 +136,6 @@
         max-width: 315px;
         padding: 13px 10px;
         line-height: 18px;
-    }
-    .place__ucrania{
-        margin-bottom: 31px;
-    }
-    .place__gales{
-        margin-bottom: 46px;
-    }
-    .place__estadosunidos{
-        margin-bottom: 25px;
-    }
-    .place__burundi{
-        margin-bottom: 41px;
     }
     .place__paragraph-item__ucrania{
         margin-bottom: 14px;
@@ -201,7 +176,7 @@
         padding-bottom: 64px;
     }
     .place{
-        margin: 0;
+        margin-bottom: 16px;
     }
     .place__title{
         align-self: flex-start;
@@ -222,18 +197,6 @@
     .place__button{
         padding-left: 16px;
         padding-right: 16px;
-    }
-    .places__ucrania{
-        margin-bottom: 16px;
-    }
-    .places__gales{
-        margin-bottom: 36px;
-    }
-    .places__estadosunidos{
-        margin-bottom: 17px;
-    }
-    .places__burundi{
-        margin-bottom: 50px;
     }
     .place__paragraph-item__ucrania{
         margin-bottom: 7px;
