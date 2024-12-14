@@ -17,4 +17,4 @@ Se hace una simulación de compra a cada una de las fotografías de las ciudades
 
 # Enlace al sitio web:
 
-https://angelesgarciad.github.io/web_project_homeland/
+https://angelesgarciad.github.io/web_project_homeland_practice/
